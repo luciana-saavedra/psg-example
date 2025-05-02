@@ -1,4 +1,4 @@
-# Python Study Group For Beginners
+# PSG-EXAMPLE
 
 Este repositorio contiene los ejercicios desarrollados en cada sesión del grupo **Python Study Group For Beginners** con el objetivo de reforzar lo aprendido con ejemplos y retos.
 
