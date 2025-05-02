@@ -1,4 +1,5 @@
-**Ingredientes:**
+#Receta de sandwich de mantequilla con mermelada
+##**Ingredientes:**
 
 1. 2 rebanadas de pan (puedes usar pan de molde, pan blanco, o tu favorito)
 
@@ -6,7 +7,7 @@
 
 3. Mermelada de tu sabor preferido
 
-**Instrucciones:**
+##**Instrucciones:**
 1. Tuesta el pan (esto es opcional).
 
 2. Unta la mantequilla.
