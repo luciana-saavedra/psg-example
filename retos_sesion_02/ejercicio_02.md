@@ -5,3 +5,4 @@ Mi nombre es Luciana Saavedra Ayarde, nací el 22 de febrero de 2007 en La Paz, 
 **una frase que me inspira:**
  > *"Sean jóvenes con sueños grandes, que no tengan miedo de soñar en grande. Sean soñadores con los ojos abiertos, que no se conformen con lo que ven, sino que luchen por lo que aún no se ve."*
 *— Papa Francisco*
+![FOTO LUCIANA](https://github.com/user-attachments/assets/acc47813-c0c1-4581-93d0-a9785c291f1e)
