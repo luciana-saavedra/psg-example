@@ -1,0 +1,8 @@
+print("Persona: ¡Hola, gatito! ¿Cómo estás hoy?")
+print("Gato: Miau, estoy bien, ¿y tú?")
+print("Persona: Super bien, ¿quieres jugar un rato?")
+print("Gato: Miau, sí, me encantaría.")
+print("Persona: Entonces, vamos a jugar con la pelota.")
+print("Gato: Miau, ¡vamos!")
+print("Persona: Bueno, nos vemos después, cuídate.")
+print("Gato: Miau, hasta luego, humano.")
