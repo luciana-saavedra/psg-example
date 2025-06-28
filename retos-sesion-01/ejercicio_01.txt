@@ -1,3 +1,0 @@
-¡Hola y bienvenid@s a Python La Paz!   
-Este es un espacio para aprender, crear y crecer juntos con Python.  
-¡Nos alegra tenerte aquí!
