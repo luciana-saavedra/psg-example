@@ -1,10 +1,11 @@
-notas = (10, 61, 80, 21, 22, 0, 32, 30, 41, 51, 5, 5, 23, 100)
+notas = (10, 61, 0, 21, 22, 0, 32, 30, 41, 51, 5, 23, 100)
 
+#Calculamos el promedio
 promedio = sum(notas) / len(notas)
 
-if promedio >= 51:
-    resultado = "Aprobó"
-else:
-    resultado = "No aprobó"
+#Evaluamos si aprobó (promedio >= 51)
+aprobado = promedio >= 51
 
-print(f"El promedio es: {promedio:.2f} - {resultado}")
+#Imprimimos resultados
+print("Promedio:", promedio)
+print("¿Aprobó el semestre?:", aprobado)
