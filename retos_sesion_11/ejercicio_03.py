@@ -3,7 +3,7 @@ tupla_especies = (('canino', '🐶'), ('felino', '🐱'), ('aves', ['🐦', '�
 #Convertimos tupla a diccionario
 diccionario_especies = dict(tupla_especies)
 
-#Obtenermos y eliminamos el valor de la clave 'aves'
+#Obtenemos y eliminamos el valor de la clave 'aves'
 aves = diccionario_especies.pop('aves')
 print(f"Especies de aves eliminadas: {aves}")
 
