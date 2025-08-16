@@ -13,4 +13,4 @@ def serie_lucas(n):
 
 #Imprimimos los primeros n números de la serie usando un bucle for
 for i in range(n):
-    print(serie_lucas(i), end=" ")
+    print(serie_lucas(i), end=", " if i < n-1 else "\n")
