@@ -1,25 +1,27 @@
 entrada = input("Ingrese los datos en este formato: número1, número2, operación(+, -, *, /): ")
 
-#Separamos los tres valores usando split y quitamos espacios con strip
-num1_str, num2_str, operacion = entrada.split(",")
-num1 = float(num1_str.strip())
-num2 = float(num2_str.strip())
-operacion = operacion.strip()
+#Separamos los valores y eliminamos espacios
+partes = entrada.split(",")
+#Verificamos que el usuario haya ingresado exactamente 3 valores
+if len(partes) == 3:
+    numero1_str, numero2_str, operacion = partes
+    numero1 = float(numero1_str.strip())
+    numero2 = float(numero2_str.strip())
+    operacion = operacion.strip()
 
-#Verificamos qué operación quiere hacer el usuario
-if operacion == "+":
-    resultado = num1 + num2
-elif operacion == "-":
-    resultado = num1 - num2
-elif operacion == "*":
-    resultado = num1 * num2
-elif operacion == "/":
-    if num2 != 0:
-        resultado = num1 / num2
+    #Realizamos la operación según el operador
+    if operacion == "+":
+        resultado = numero1 + numero2
+    elif operacion == "-":
+        resultado = numero1 - numero2
+    elif operacion == "*":
+        resultado = numero1 * numero2
+    elif operacion == "/":
+        resultado = numero1 / numero2 if numero2 != 0 else "Error: División entre cero"
     else:
-        resultado = "Error: División por cero" #No se puede dividir entre 0
+        resultado = "Operación no válida"
 else:
-    resultado = "Operación no válida" #Porque la operación no está dentro de las que nuestra calculadora ofrece
+    resultado = "Formato de entrada incorrecto, debe ser: número1, número2, operación"
 
 #Mostramos el resultado
 print("-------------")
