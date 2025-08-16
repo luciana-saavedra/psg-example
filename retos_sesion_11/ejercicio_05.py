@@ -15,23 +15,23 @@ arca.update({
     "🐰": 4
 })
 
-#Lista de animales (claves)
-animales = list(arca.keys())
+#Lista de animales en el arca
+iterador_arca = iter(arca.items())
 
-#Imprimir cada animal con su cantidad, manualmente
-print(f"Animales en el arca:")
-print(f"{animales[0]}: {arca[animales[0]]}")
-print(f"{animales[1]}: {arca[animales[1]]}")
-print(f"{animales[2]}: {arca[animales[2]]}")
-print(f"{animales[3]}: {arca[animales[3]]}")
-print(f"{animales[4]}: {arca[animales[4]]}")
-print(f"{animales[5]}: {arca[animales[5]]}")
-print(f"{animales[6]}: {arca[animales[6]]}")
-print(f"{animales[7]}: {arca[animales[7]]}")
-print(f"{animales[8]}: {arca[animales[8]]}")
+print("Animales en el arca:")
 
-#Verificamos si 'dragon' 🐲 está en el arca
-print(f"\n¿Está el dragón? {'🐲' in arca}")
+print(next(iterador_arca))  # perro
+print(next(iterador_arca))  # gato
+print(next(iterador_arca))  # tigre
+print(next(iterador_arca))  # mono
+print(next(iterador_arca))  # unicornio
+print(next(iterador_arca))  # jirafa
+print(next(iterador_arca))  # dragón
+print(next(iterador_arca))  # serpiente
+print(next(iterador_arca))  # conejo
+
+#Verificamos si el dragón 🐲 está en el arca
+print("\n¿Está el dragón?", "🐲" in arca)
 
 #Eliminamos la especie unicornio
 arca.pop("🦄", None)
@@ -39,21 +39,20 @@ arca.pop("🦄", None)
 #Modificamos cantidad de jirafa a 2
 arca["🦒"] = 2
 
-#Actualizamos la lista porque cambió el diccionario
-animales = list(arca.keys())
+#Lista actualizada después de los cambios
+iterador_arca_actualizado = iter(arca.items())
 
 print("\nDespués de modificar la cantidad de jirafa y eliminar unicornio:")
-print(f"{animales[0]}: {arca[animales[0]]}")
-print(f"{animales[1]}: {arca[animales[1]]}")
-print(f"{animales[2]}: {arca[animales[2]]}")
-print(f"{animales[3]}: {arca[animales[3]]}")
-print(f"{animales[4]}: {arca[animales[4]]}")
-print(f"{animales[5]}: {arca[animales[5]]}")
-print(f"{animales[6]}: {arca[animales[6]]}")
-print(f"{animales[7]}: {arca[animales[7]]}")
+
+print(next(iterador_arca_actualizado))  # perro
+print(next(iterador_arca_actualizado))  # gato
+print(next(iterador_arca_actualizado))  # tigre
+print(next(iterador_arca_actualizado))  # mono
+print(next(iterador_arca_actualizado))  # jirafa
+print(next(iterador_arca_actualizado))  # dragón
+print(next(iterador_arca_actualizado))  # serpiente
+print(next(iterador_arca_actualizado))  # conejo
 
 #Vaciamos el arca después del diluvio
 arca.clear()
-
-#Estado final del arca
-print(f"\nEstado final del arca después del diluvio: {arca}")
+print("\nEstado final del arca después del diluvio:", arca)
